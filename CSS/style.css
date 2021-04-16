@@ -1,0 +1,68 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2em 1fr 1fr 1fr 2em);
+    background-color:#4B0082;  
+}
+
+header {
+    grid-row:1;
+    grid-column:2; 
+    text-align: center;
+    color:#FF69B4;
+    font-family: 'Monoton', cursive;
+}
+
+footer {
+    grid-row:5;
+    grid-column:2; 
+    text-align: center;
+    font-size: 20px;
+    color: #7B68EE;
+    font-family: 'Press Start 2P', cursive;
+}
+
+p {
+    grid-row:2;
+    grid-column:2;
+    color: #DB7093;
+    font-size: 16px;
+    text-align: center;
+    font-family: 'New Tegomin', serif;
+    padding: 10px;
+}
+
+.form {
+    grid-row:3;
+    grid-column:2;
+    text-align: center;
+    font-family: 'New Tegomin', serif;
+}
+
+#message {
+    height:345px;
+    width:340px;
+    background-color: #ffc0cb;
+    color:#000000
+}
+
+#name {
+    width:200px;
+    height:20px;
+    background-color:#ffc0cb;
+}
+
+#email {
+    width:200px;
+    height:20px;
+    background-color:#ffc0cb;
+}
+
+#btn {
+    font-size: 35px;
+    background-color: #FF69B4;
+}
+
+@media only screen and (max-width: 350px) {
+     #message {max-width: 85%;} 
+}
